@@ -1,0 +1,480 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* Generales */
+body{
+    background-color:rgb(255, 239, 215);
+    width: 100%;
+    min-height: 100%;
+}
+
+main {
+    padding: 20px 50px;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 239, 215);
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(137, 83, 53);
+}
+
+.titulo-principal{
+    color: rgb(255, 239, 215);
+    margin-bottom: 8px;
+}
+
+.titulo-principal a:visited {
+    color: inherit;
+}
+
+.header hr {
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    border-bottom: solid 1px;
+}
+
+.navegador {
+    width: 100%;
+    background-color: rgb(134, 146, 86);
+    display: flex;
+    justify-content: center;
+}
+
+.navegador ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.navegador li {
+    height: 45px;
+    width: 100%;
+}
+
+.navegador ul li form {
+    height: 100%;
+}
+
+.navegador a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.navegador a:hover{
+    background-color: rgb(181, 181, 117);
+}
+
+/* Ingresar */
+.contenedor_ingresar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor_ingresar form{
+    margin: 50px auto;
+}
+
+.form-titulo{
+    grid-column: span 2;
+    margin-bottom: 0;
+}
+
+.contenedor_ingresar .formulario .form-componente{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.contenedor_ingresar .formulario .form-componente label{
+    margin: 0;
+}
+
+.btn-ingresar{
+    grid-column: span 2;
+    cursor: pointer;
+}
+
+.btn-ingresar:hover{
+    background-color: rgb(106, 158, 255);
+    color: white;
+}
+
+.mensajeError{
+    grid-column: span 2;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(167, 12, 43);
+}
+
+/* Formulario */
+.form-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 15px;
+
+    margin: 0 auto;
+
+    padding: 15px 25px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    width: 500px;
+}
+
+.formulario label {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-nombre {
+    grid-column: span 2;
+}
+
+.form-separador {
+    grid-column: span 2;
+}
+
+.form-h3 {
+    grid-column: span 2;   
+}
+
+.form-titulo {
+    grid-column: span 2;
+}
+
+.form-autor {
+    grid-column: span 2;
+}
+
+.form-descripcion {
+    grid-column: span 2;
+}
+
+.form-portada {
+    grid-column: span 2;
+}
+
+.form-section .formulario .form-portada p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.formulario input,
+.formulario textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-estado{
+    grid-column: span 2;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.formulario hr{
+    grid-column: span 2;
+}
+
+.form-captcha{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 2;
+}
+
+.form-captcha img {
+    margin: 10px 0;
+}
+
+.form-boton {
+    cursor: pointer;
+}
+
+.form-boton:hover{
+    color: white;
+}
+
+.btn-enviar:hover {
+    background-color: rgb(106, 158, 255);
+}
+
+.btn-borrar:hover {
+    background-color: rgb(167, 52, 52);
+}
+
+.r-exitoso {
+    font-size: 2rem;
+    text-align: center;
+    color: green;
+    grid-column: span 2;
+}
+
+.r-incorrecto {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(184, 0, 0);
+    grid-column: span 2;
+    margin-top: 10px;
+}
+
+/* Ver registro */
+.contenedor-libros{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contenedor-libros .contenedorEstado{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-libros .contenedorEstado .lista-libros{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    place-items: start start;
+}
+
+.contenedor-libros .card-libro {
+    width: 100%;
+    padding: 15px 25px;
+    background-color: rgb(137, 83, 53);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    grid-template-areas: 
+    'tit tit'
+    'des img'
+    'aut img'
+    'pub img'
+    'gen img'
+    'hr hr'
+    'edit usu'
+    'subir fecha'
+    'elim estado';
+    gap: 5px 10px;
+}
+
+.contenedor-libros .card-libro .card-portada{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    align-self: start;
+
+    grid-area: img;
+}
+
+.contenedor-libros .card-libro p {
+    font-size: 1.5rem;
+}
+
+.contenedor-libros .card-libro .card-titulo {
+    grid-area: tit;
+    text-align: start;
+}
+
+.contenedor-libros .card-libro .card-descripcion {
+    grid-area: des;
+    color: black;
+    background-color: rgb(245, 222, 179);
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-autor {
+    grid-area: aut;
+}
+
+.card-publicacion {
+    grid-area: pub;
+}
+
+.card-genero {
+    grid-area: gen;
+}
+
+.card-libro hr{
+    grid-area: hr;
+}
+
+.contenedor-libros .card-libro .card-info-usuario{
+    text-align: right;
+    grid-area: usu;
+}
+
+.contenedor-libros .card-libro .card-info-fecha {
+    text-align: right;
+    grid-area: fecha;
+}
+
+.contenedor-libros .card-libro .card-info-estado {
+    text-align: right;
+    grid-area: estado;
+}
+
+.contenedor-libros .card-libro .btn-eliminar, .btn-subir, .btn-editar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-eliminar{
+    grid-area: elim;
+}
+
+.btn-eliminar input {
+    border: 1px solid #ccc;
+    background-color: rgb(167, 12, 43);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eliminar input:hover{
+    background-color: crimson;
+    color: yellow;
+}
+
+.btn-subir{
+    grid-area: subir;
+}
+
+.btn-subir input {
+    border: 1px solid #ccc;
+    background-color: rgb(71, 167, 12);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-subir input:hover{
+    background-color: rgb(9, 108, 1);
+    color: yellow;
+}
+
+.btn-editar{
+    grid-area: edit;
+}
+
+.btn-editar input {
+    border: 1px solid #ccc;
+    background-color: rgb(18, 83, 141);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar input:hover{
+    background-color: rgb(44, 107, 128);
+    color: yellow;
+}
+
+.formulario #mantenerSesion input{
+    width: fit-content;
+    cursor: pointer;
+}
+
+.formulario #mantenerSesion label{
+    text-align: left;
+    font-size: 1.5rem;
+
+}
+
+#crearCuenta {
+    font-size: 1.8rem;
+}
+
+#crearCuenta a{
+    color: blue;
+}
+
+#registroUsuario .emailComponente{
+    grid-column: span 2;
+}
+
+.errores{
+    grid-column: span 2;
+    width: 100%;
+    font-size: 1.5rem;
+    color: crimson;
+    text-align: center;
+}
