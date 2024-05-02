@@ -478,3 +478,9 @@ a {
     color: crimson;
     text-align: center;
 }
+
+.textoHome{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+}
